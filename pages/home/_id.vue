@@ -39,7 +39,7 @@ export default {
       title: this.home.title,
       script: [
         {
-          src: 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDGhyBiLArArkhFJBIikNhWKKLFCTlLNMI&Libraries=places',
+          src: `https://maps.googleapis.com/maps/api/js?key=${process.env.GOOGLE_API}&Libraries=places`,
           hid: 'map',
           defer: true,
         },
